@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+.env
+.streamlit/
+data/faiss_index/*
+data/uploads/*
+!data/faiss_index/.gitkeep
+!data/uploads/.gitkeep

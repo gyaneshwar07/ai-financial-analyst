@@ -1,37 +1,63 @@
-# AI Financial Analyst — Full Stack GenAI + Agentic AI
+# 💰 AI Financial Analyst
 
-This is a beginner-friendly finance AI project built in the same style as a simple LangChain/LangGraph tool-calling application.
+An AI-powered financial analysis assistant that combines **Generative AI, LangGraph, LangChain, RAG, FAISS, and financial tools** to analyze financial documents and answer stock-related questions.
 
-## Stack
+The application allows users to upload financial PDFs such as annual reports and ask questions about revenue, profit, business segments, financial performance, and other company information.
 
-- Python
-- FastAPI
-- Streamlit
-- LangChain
-- LangGraph
-- Gemini 2.5 Flash
-- Gemini embeddings
-- FAISS
-- yfinance
-- PyPDF
+It can also handle stock-related queries using financial tools and current market data.
 
-## Flow
+---
+
+## 🚀 Features
+
+### 📄 Financial Document Analysis
+- Upload financial PDFs / annual reports
+- Extract text from PDF documents
+- Split documents into smaller chunks
+- Generate local embeddings
+- Store embeddings in FAISS
+- Retrieve relevant financial information using semantic search
+- Answer questions using retrieved document context
+
+### 📈 Stock Analysis
+- Query current stock information
+- Analyze stock fundamentals
+- Retrieve financial metrics
+- Answer stock-related questions using financial tools
+
+### 🤖 AI Agent
+
+The application uses **LangGraph** to orchestrate the financial analysis workflow.
+
+The agent can decide which capability is required for a query:
+
+- Financial document retrieval
+- Financial/stock tools
+- LLM-based reasoning
+- Final response generation
+
+### 🔍 RAG Pipeline
+
+The application implements Retrieval-Augmented Generation:
 
 ```text
-Streamlit
-   ↓
-FastAPI
-   ↓
-LangGraph
-   ↓
-Gemini
-   ↓
-Tool Calling
-   ├── get_stock_price
-   ├── get_company_financials
-   ├── calculate_growth
-   └── search_financial_documents
-```
+PDF
+ ↓
+Text Extraction
+ ↓
+Text Chunking
+ ↓
+Hugging Face Embeddings
+ ↓
+FAISS Vector Store
+ ↓
+Similarity Search
+ ↓
+Relevant Context
+ ↓
+Gemini LLM
+ ↓
+Final Answer
 
 ## Setup
 

@@ -4,7 +4,7 @@ from pypdf import PdfReader
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 
 INDEX_PATH = Path("data/faiss_index")
@@ -39,9 +39,9 @@ def create_vector_store(file_path: str):
 
     chunks = splitter.split_documents(documents)
 
-    # Local Hugging Face embeddings
-    embeddings = HuggingFaceEmbeddings(
-        model_name="sentence-transformers/all-MiniLM-L6-v2"
+    # Google Gemini embeddings
+    embeddings = GoogleGenerativeAIEmbeddings(
+       model="gemini-embedding-001"
     )
 
     store = FAISS.from_documents(chunks, embeddings)

@@ -2,7 +2,7 @@ from pathlib import Path
 
 from langchain_core.tools import tool
 from langchain_community.vectorstores import FAISS
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 
 INDEX_PATH = Path("data/faiss_index")
@@ -12,9 +12,9 @@ def get_vector_store():
     if not (INDEX_PATH / "index.faiss").exists():
         return None
 
-    # Use the SAME local embedding model used during PDF indexing
-    embeddings = HuggingFaceEmbeddings(
-        model_name="sentence-transformers/all-MiniLM-L6-v2"
+    # Use the SAME Gemini embedding model used during PDF indexing
+    embeddings = GoogleGenerativeAIEmbeddings(
+        model="gemini-embedding-001"
     )
 
     return FAISS.load_local(

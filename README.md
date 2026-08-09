@@ -1,6 +1,5 @@
 # 💰 AI Financial Analyst
 
-<<<<<<< HEAD
 An AI-powered financial analysis assistant that combines **Generative AI, LangGraph, LangChain, RAG, FAISS, and financial tools** to analyze financial documents and answer stock-related questions.
 
 The application allows users to upload financial PDFs such as annual reports and ask questions about revenue, profit, business segments, financial performance, and other company information.
@@ -93,29 +92,6 @@ Depending on the user's query, the system can use:
 * Stock/financial tools
 * LLM reasoning
 * Multiple steps of agent execution
-
-### 🔍 RAG Pipeline
-
-```text
-Financial PDF
-     ↓
-PDF Text Extraction
-     ↓
-Text Chunking
-     ↓
-Hugging Face Embeddings
-     ↓
-FAISS Vector Store
-     ↓
-Similarity Search
-     ↓
-Relevant Context
-     ↓
-Gemini LLM
-     ↓
-Final Answer
-```
->>>>>>> 4e59c61 (Update project README)
 
 ### 🧠 Local Embeddings
 
@@ -457,23 +433,7 @@ FastAPI Swagger documentation:
 http://127.0.0.1:8000/docs
 ```
 
-<<<<<<< HEAD
 Market data may be delayed/incomplete. The application is for educational and research purposes and does not provide personalized investment advice.
-
-🔮 Future Improvements
-Add more financial data APIs, 
-Add multi-agent financial research,
-Add financial charts and visualizations,
-Add portfolio analysis,
-Add company comparison,
-Add historical stock analysis,
-Add citation links to annual report pages,
-Add conversation memory,
-Add authentication,
-Deploy the application publicly, and
-Add automated evaluation for RAG responses
-=======
----
 
 # 🔐 Security
 
@@ -530,5 +490,4 @@ https://www.linkedin.com/in/gyaneshwar-kumar-7744472a3/
 
 ---
 
-⭐ If you found this project useful, consider giving the repository a star.
->>>>>>> 4e59c61 (Update project README)
+⭐ If you found this project useful, consider giving the repository a star

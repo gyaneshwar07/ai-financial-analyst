@@ -11,5 +11,3 @@ faiss-cpu
 pypdf
 yfinance
 python-multipart
-langchain-huggingface
-sentence-transformers

@@ -8,6 +8,16 @@ It can also handle stock-related queries using financial tools and current marke
 
 ---
 
+## 🚀 Live Demo
+
+| Component | Link |
+|---|---|
+| 🎨 Frontend | [AI Financial Analyst](https://ai-financial-analyst-frontend-q856.onrender.com) |
+| ⚙️ Backend API | [FastAPI Backend](https://ai-financial-analyst-backend-s2h4.onrender.com) |
+| 📚 API Docs | [Swagger Documentation](https://ai-financial-analyst-backend-s2h4.onrender.com/docs) |
+
+> The application is deployed on Render. The free-tier services may take a few seconds to wake up after inactivity.
+
 ## 🚀 Features
 
 ### 📄 Financial Document Analysis

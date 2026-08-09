@@ -28,7 +28,7 @@ It can also handle stock-related queries using financial tools and current marke
 
 ![RAG Result](https://github.com/user-attachments/assets/596f6b1c-c144-4182-b7fb-455bdff4cab9)
 
-### Architecture
+### System Architecture
 
 ![System Architecture](https://github.com/user-attachments/assets/94dc372e-af06-43dc-ae64-a9dad647f6e6)
 

@@ -112,14 +112,14 @@ Start with these:
 Market data may be delayed/incomplete. The application is for educational and research purposes and does not provide personalized investment advice.
 
 🔮 Future Improvements
-Add more financial data APIs
-Add multi-agent financial research
-Add financial charts and visualizations
-Add portfolio analysis
-Add company comparison
-Add historical stock analysis
-Add citation links to annual report pages
-Add conversation memory
-Add authentication
-Deploy the application publicly
+Add more financial data APIs, 
+Add multi-agent financial research,
+Add financial charts and visualizations,
+Add portfolio analysis,
+Add company comparison,
+Add historical stock analysis,
+Add citation links to annual report pages,
+Add conversation memory,
+Add authentication,
+Deploy the application publicly, and
 Add automated evaluation for RAG responses
